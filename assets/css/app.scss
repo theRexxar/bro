@@ -1,0 +1,92 @@
+// code by jepri torang sinaga
+
+// include bourbon assets
+@import '../bourbon/bourbon';
+
+// include reseter
+@import '../bourbon/normalize';
+
+// import font 
+@import '../bourbon/fonts';
+
+// import config param
+@import '../bourbon/config';
+
+// import modal effect
+@import '../bourbon/component';
+
+
+html, body{
+	margin      : 0;
+	padding     : 0;
+	width       : 100%;
+	height      : 100%;
+	overflow    : hidden;
+	font-size   : 100%;
+	font-family : $Bodyfont;
+	color       : $white;
+}
+
+
+#container{
+	width      : 100%;
+	height     : 100%;
+	position   : relative;
+	background : $white url(../images/preload.gif) no-repeat center;
+}
+
+.wrapper{
+	width                   : 100%;
+	height                  : 100%;
+	overflow                : hidden;
+	display                 : -webkit-box;
+	display                 : -moz-box;
+	display                 : -webkit-flex;
+	display                 : flex;
+	-webkit-flex-direction  : row;
+	flex-direction          : row;
+	-webkit-flex-wrap       : wrap;
+	flex-wrap               : wrap;
+	-webkit-box-pack        : center;
+	-moz-box-pack           : center;
+	-webkit-justify-content : center;
+	justify-content         : center;
+	-webkit-box-align       : center;
+	-moz-box-align          : center;
+	-webkit-align-items     : center;
+	align-items             : center;
+	text-align              : center;
+}
+
+
+article p{
+	font-size   : em(43);
+	line-height : 120%;
+	font-family : $Headfont;
+	color: $white;
+}
+
+#page-one{
+	background :  url("../images/background/1.jpg") no-repeat;
+	-webkit-background-size : cover;
+	-moz-background-size    : cover;
+	-o-background-size      : cover;
+	background-size         : cover;
+}
+
+#page-two{
+	background :  url("../images/background/2.jpg") no-repeat;
+	-webkit-background-size : cover;
+	-moz-background-size    : cover;
+	-o-background-size      : cover;
+	background-size         : cover;
+}
+
+#page-three{
+	background :  url("../images/background/3.jpg") no-repeat;
+	-webkit-background-size : cover;
+	-moz-background-size    : cover;
+	-o-background-size      : cover;
+	background-size         : cover;
+}
+
