@@ -1186,23 +1186,40 @@ article p {
   font-family: "tw_cen_mtbold", "tw_cen_mtregular", "helvetica neue", helvetica, arial;
   color: white; }
 
+article span {
+  font-size: 1.875em;
+  line-height: 120%;
+  font-family: "tw_cen_mtbold", "tw_cen_mtregular", "helvetica neue", helvetica, arial; }
+
 #page-one {
-  background: url("../images/background/1.jpg") no-repeat;
+  background: url("../images/background/1.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #page-two {
-  background: url("../images/background/2.jpg") no-repeat;
+  background: url("../images/background/2.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
 #page-three {
-  background: url("../images/background/3.jpg") no-repeat;
+  background: url("../images/background/3.jpg") no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  article p {
+    font-size: 2.0625em;
+    line-height: 110%;
+    font-family: "tw_cen_mtbold", "tw_cen_mtregular", "helvetica neue", helvetica, arial;
+    color: white; }
+
+  article span {
+    font-size: 1.25em;
+    line-height: 100%;
+    font-family: "tw_cen_mtbold", "tw_cen_mtregular", "helvetica neue", helvetica, arial; } }

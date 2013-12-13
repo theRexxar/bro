@@ -66,8 +66,14 @@ article p{
 	color: $white;
 }
 
+article span{
+	font-size   : em(30);
+	line-height : 120%;
+	font-family : $Headfont;
+}
+
 #page-one{
-	background :  url("../images/background/1.jpg") no-repeat;
+	background :  url("../images/background/1.jpg") no-repeat center;
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
 	-o-background-size      : cover;
@@ -75,7 +81,7 @@ article p{
 }
 
 #page-two{
-	background :  url("../images/background/2.jpg") no-repeat;
+	background :  url("../images/background/2.jpg") no-repeat center;
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
 	-o-background-size      : cover;
@@ -83,10 +89,27 @@ article p{
 }
 
 #page-three{
-	background :  url("../images/background/3.jpg") no-repeat;
+	background :  url("../images/background/3.jpg") no-repeat center;
 	-webkit-background-size : cover;
 	-moz-background-size    : cover;
 	-o-background-size      : cover;
 	background-size         : cover;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	article p{
+		font-size   : em(33);
+		line-height : 110%;
+		font-family : $Headfont;
+		color: $white;
+	}
+
+	article span{
+		font-size   : em(20);
+		line-height : 100%;
+		font-family : $Headfont;
+	}
+}
+
 
